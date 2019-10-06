@@ -1,6 +1,11 @@
 import React from 'react';
 
-const GridGallery = React.memo(({ items, render }) => {
+type Props = {
+	items: Array<any>;
+	render?: any;
+};
+
+const GridGallery = React.memo(({ items, render }: Props) => {
 	return (
 		<div>
 			{items.map(
