@@ -1,3 +1,4 @@
-import GridGallery from './GridGallery';
+import Original from './Masonry';
+import Square from './Square';
 
-export { GridGallery };
+export { Original, Square };
