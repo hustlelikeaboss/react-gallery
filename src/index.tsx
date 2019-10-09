@@ -4,8 +4,7 @@ import Unsplash from 'unsplash-js';
 
 import './App.css';
 
-import Square from './lib/Square';
-import Masonry from './lib/Masonry';
+import { Square, Masonry, MasonryAlt } from './lib';
 
 const unsplash = new Unsplash({
 	applicationId: process.env.REACT_APP_UNSPLASH_ACCESS_KEY || '',
@@ -16,7 +15,7 @@ const App = () => {
 	const [photos, setPhotos] = useState([]);
 	useEffect(() => {
 		unsplash.collections
-			.getCollectionPhotos(239835, 1, 12)
+			.getCollectionPhotos(239835, 1, 15)
 			.then(res => res.json())
 			.then(json => {
 				const photos = json.map((photo: any) => ({
@@ -34,7 +33,12 @@ const App = () => {
 		<div>
 			<h1>React Gallery</h1>
 
-			<h2>Masonry</h2>
+			<h2>Masonry Alt</h2>
+			<p>Left aligned, fixed height</p>
+			<MasonryAlt items={photos} />
+
+			<h2>Masonry: Top Align</h2>
+			<p>Top aligned, fixed width</p>
 			<Masonry items={photos} />
 
 			<h2>Square</h2>

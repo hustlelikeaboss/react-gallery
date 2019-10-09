@@ -1,4 +1,5 @@
-import Original from './Masonry';
 import Square from './Square';
+import Masonry from './Masonry';
+import MasonryAlt from './MasonryAlt';
 
-export { Original, Square };
+export { Square, Masonry, MasonryAlt };
