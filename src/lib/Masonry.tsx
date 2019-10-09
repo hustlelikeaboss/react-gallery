@@ -55,7 +55,7 @@ const Masonry = React.memo(({ items, numOfCols = 4, render }: Props) => {
 		<Wrapper>
 			{cols.map((col: Array<any>, index: number) => (
 				<Column key={'col-' + index} numOfCols={numOfCols}>
-					{col.map(item => (
+					{col.map(item => render ? render(item) : (
 						<img
 							key={item.id}
 							src={item.url}

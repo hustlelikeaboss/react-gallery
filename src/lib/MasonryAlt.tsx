@@ -39,11 +39,15 @@ type Props = {
 const Masonry = React.memo(({ items, render }: Props) => {
 	return (
 		<Grid>
-			{items.map((item: any, index: number) => (
-				<GridItem key={item.id}>
-					<img src={item.url} alt={item.description} />
-				</GridItem>
-			))}
+			{items.map((item: any) =>
+				render ? (
+					render(item)
+				) : (
+					<GridItem key={item.id}>
+						<img src={item.url} alt={item.description} />
+					</GridItem>
+				)
+			)}
 		</Grid>
 	);
 });

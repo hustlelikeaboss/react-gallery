@@ -5,6 +5,7 @@ import Unsplash from 'unsplash-js';
 import './App.css';
 
 import { Square, Masonry, MasonryAlt } from './lib';
+import BlogPosts from './examples/BlogPosts';
 
 const unsplash = new Unsplash({
 	applicationId: process.env.REACT_APP_UNSPLASH_ACCESS_KEY || '',
@@ -32,17 +33,18 @@ const App = () => {
 	return (
 		<div>
 			<h1>React Gallery</h1>
-
-			<h2>Masonry Alt</h2>
-			<p>Left aligned, fixed height</p>
-			<MasonryAlt items={photos} />
-
-			<h2>Masonry: Top Align</h2>
-			<p>Top aligned, fixed width</p>
-			<Masonry items={photos} />
-
 			<h2>Square</h2>
 			<Square items={photos} />
+
+			<h2>Masonry</h2>
+			<h3>Top aligned, fixed width</h3>
+			<Masonry items={photos} />
+
+			<BlogPosts />
+
+			<h2>Masonry Alt</h2>
+			<h3>Left aligned, fixed height</h3>
+			<MasonryAlt items={photos} />
 		</div>
 	);
 };
