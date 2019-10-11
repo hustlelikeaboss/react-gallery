@@ -3,16 +3,13 @@ import { render } from 'react-dom';
 
 import './App.css';
 
-import BlogPosts from './examples/BlogPosts';
-import Galleries from './examples/Galleries';
+import NavBar from './examples/NavBar';
 import Footer from './examples/Footer';
 
 const App = () => (
-	<div>
-		<h1>React Gallery</h1>
+	<div id="app">
+		<NavBar/>
 
-		<Galleries />
-		<BlogPosts />
 		<Footer />
 	</div>
 );
