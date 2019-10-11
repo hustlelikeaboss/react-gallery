@@ -10,7 +10,7 @@ const Grid = styled.div`
 const GridItem = styled.div`
 	> * {
 		width: auto;
-		height: 40vh;
+		height: 25vw;
 		margin: 0.5em;
 		text-align: center;
 		line-height: 75px;
@@ -25,6 +25,12 @@ const GridItem = styled.div`
 
 		/* Responsive layout - makes items stack */
 		@media (max-width: 800px) {
+			width: 50vw;
+			height: auto;
+		}
+
+		/* Responsive layout - makes items stack */
+		@media (max-width: 600px) {
 			width: 80vw;
 			height: auto;
 		}
@@ -36,7 +42,7 @@ type Props = {
 	render?: any;
 };
 
-const Masonry = React.memo(({ items, render }: Props) => {
+const MasonryAlt = React.memo(({ items, render }: Props) => {
 	return (
 		<Grid>
 			{items.map((item: any) =>
@@ -52,4 +58,4 @@ const Masonry = React.memo(({ items, render }: Props) => {
 	);
 });
 
-export default Masonry;
+export default MasonryAlt;
