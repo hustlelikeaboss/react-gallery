@@ -1,12 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Unsplash from 'unsplash-js';
-
-import { Square, Masonry, MasonryAlt } from '../lib';
-
-const unsplash = new Unsplash({
-	applicationId: process.env.REACT_APP_UNSPLASH_ACCESS_KEY || '',
-	secret: process.env.REACT_APP_UNSPLASH_SECRET_KEY || ''
-});
+import unsplash from './unsplash';
+import * as ReGal from '../lib';
 
 const Galleries = () => {
 	const [photos, setPhotos] = useState([]);
@@ -29,15 +23,15 @@ const Galleries = () => {
 	return (
 		<div>
 			<h2>Square</h2>
-			<Square items={photos} />
+			<ReGal.Square items={photos} />
 
 			<h2>Masonry</h2>
-			<h3>Top aligned, fixed width</h3>
-			<Masonry items={photos} />
+			<h3>Top aligned, fixed width, responsive</h3>
+			<ReGal.Masonry items={photos} />
 
 			<h2>Masonry Alt</h2>
 			<h3>Left aligned, fixed height</h3>
-			<MasonryAlt items={photos} />
+			<ReGal.MasonryAlt items={photos} />
 		</div>
 	);
 };
