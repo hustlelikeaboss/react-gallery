@@ -28,7 +28,7 @@ const NavBar = styled.div`
 
 export default () => {
 	return (
-		<Router>
+		<Router basename={process.env.PUBLIC_URL}>
 			<NavBar>
 				<h1>React Gallery</h1>
 				<nav>
