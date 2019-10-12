@@ -9,12 +9,12 @@ https://react-gallery.now.sh/
 The demo site also includes a [playground](https://react-gallery.now.sh/playground) where you can intereact with the library live.
 
 ## Usage
-1. `npm i -D react-gallery`
+1. `npm i -D @hustlelikeaboss/react-gallery`
 2. Example:
    ```javascript
    import React from 'react';
    import PropTypes from 'prop-types';
-   import * as ReGal from 'react-gallery';
+   import * as ReGal from '@hustlelikeaboss/react-gallery';
 
    const Masonry = ({photos, numOfCols}) => (
         <ReGal.Masonry 
