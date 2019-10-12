@@ -26,7 +26,9 @@
 		"build-examples": "react-scripts build",
 		"test": "react-scripts test --env=jsdom",
 		"eject": "react-scripts eject",
-		"build": "rimraf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
+		"build": "rimraf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
+		"now-dev": "react-scripts start",
+		"now-build": "npm run build-examples"
 	},
 	"devDependencies": {
 		"@emotion/core": "^10.0.21",
