@@ -3,9 +3,10 @@
 	"version": "0.1.0",
 	"description": "a react component library for building galleries",
 	"license": "MIT",
+	"homepage": "https://react-gallery.now.sh/",
 	"repository": {
 		"type": "git",
-		"url": "git://https://github.com/hustlelikeaboss/react-gallery.git"
+		"url": "https://github.com/hustlelikeaboss/react-gallery.git"
 	},
 	"private": false,
 	"keywords": [
