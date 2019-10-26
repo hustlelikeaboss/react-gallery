@@ -10,7 +10,7 @@ const code = `
 class Example extends React.Component{
 	constructor(props) {
 		super(props);
-		this.state = { photos: [], numOfCols: 4 };
+		this.state = { photos: [], numOfCols: 3 };
 	}
 
 	componentDidMount() {
