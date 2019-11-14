@@ -1,4 +1,7 @@
 # React Gallery
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/hustlelikeaboss/react-gallery.svg)](https://greenkeeper.io/)
+
 A simple flexbox-based React library for creating photo galleries, or pretty much anything you want to display in a grid layout
 
 ## Demo
