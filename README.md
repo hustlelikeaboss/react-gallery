@@ -52,7 +52,7 @@ The demo site also includes a [playground](https://react-gallery.now.sh/playgrou
 4. `now secrets add REACT_APP_UNSPLASH_SECRET_KEY <secret-value>`
    
 ### deployment
-1. to trigger a production build, run `now --prod` or `git push`
+1. to trigger a production build, run `now --prod`; or, while on the `master` branch, run `git push` 
 2. to trigger a staging build, run `now` or `git push` to a branch
 
 ## Publish
