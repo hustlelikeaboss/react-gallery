@@ -27,11 +27,12 @@
 		"build-examples": "react-scripts build",
 		"test": "react-scripts test --env=jsdom",
 		"eject": "react-scripts eject",
-		"build": "rimraf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
+		"build": "rimraf dist && NODE_ENV=production npx babel src/lib --out-dir dist --copy-files",
 		"now-dev": "react-scripts start",
 		"now-build": "npm run build-examples"
 	},
 	"devDependencies": {
+		"@babel/cli": "^7.8.4",
 		"@emotion/core": "^10.0.21",
 		"@emotion/styled": "^10.0.17",
 		"@types/jest": "^24.0.18",
@@ -40,8 +41,6 @@
 		"@types/react-dom": "^16.9.1",
 		"@types/react-router-dom": "^5.1.0",
 		"@types/unsplash-js": "^5.0.0",
-		"babel-cli": "^6.26.0",
-		"babel-preset-react-app": "^9.0.2",
 		"react": "^16.10.2",
 		"react-dom": "^16.10.2",
 		"react-live": "^2.2.1",
