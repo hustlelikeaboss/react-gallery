@@ -48,7 +48,7 @@
 		"react-scripts": "^3.2.0",
 		"rimraf": "^3.0.0",
 		"typescript": "^3.6.3",
-		"unsplash-js": "^5.0.0"
+		"unsplash-js": "^7.0.20"
 	},
 	"browserslist": {
 		"production": [
